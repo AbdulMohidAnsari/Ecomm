@@ -22,9 +22,9 @@ app.use((req,res,next)=>{
     next();})
 
 
-app.get("/",(req,res)=>{
-  return  res.send("Welcome to E-comerce MEAN Project")
-})
+// app.get("/",(req,res)=>{
+//   return  res.send("Welcome to E-comerce MEAN Project")
+// })
 
 app.use("/admin",require("./routes/admin"))
 app.use("/productcategory",require("./routes/productcategory"))
